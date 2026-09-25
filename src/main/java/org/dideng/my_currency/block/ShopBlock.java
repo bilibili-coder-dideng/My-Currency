@@ -30,6 +30,7 @@ import org.jetbrains.annotations.Nullable;
 // 一格小店，明码标价，店主离线也照常营业
 @SuppressWarnings("NullableProblems")
 public class ShopBlock extends BaseEntityBlock {
+    public static final MapCodec<ShopBlock> CODEC = simpleCodec(ShopBlock::new);
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
     public ShopBlock(Properties properties) {
@@ -39,7 +40,7 @@ public class ShopBlock extends BaseEntityBlock {
 
     @Override
     protected MapCodec<? extends BaseEntityBlock> codec() {
-        return null;
+        return CODEC;
     }
 
     @Override

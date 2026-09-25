@@ -12,6 +12,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.items.ItemStackHandler;
+import org.dideng.my_currency.ModItems;
 import org.dideng.my_currency.attachment.ModAttachments;
 import org.dideng.my_currency.data.PendingPayouts;
 import org.dideng.my_currency.menu.ShopMenu;
@@ -37,7 +38,8 @@ public class ShopBlockEntity extends BlockEntity {
         @Override
         public boolean isItemValid(int slot, ItemStack stack) {
             if (slot == SAMPLE_SLOT) {
-                return true;
+                // 拿钱卖钱属于空手套白狼，本店拒绝开展洗钱业务
+                return ModItems.valueOf(stack.getItem()) <= 0;
             }
             // 无限模式不收实物，实物补货必须和样品一模一样（附魔 NBT 都得对）
             if (infinite) {
@@ -130,7 +132,7 @@ public class ShopBlockEntity extends BlockEntity {
     // 一手交钱一手交货，任何一步翻车都原地回滚
     public SellResult sellOne(ServerPlayer buyer) {
         ItemStack product = getProduct();
-        if (product.isEmpty()) {
+        if (product.isEmpty() || ModItems.valueOf(product.getItem()) > 0) {
             return SellResult.NO_PRODUCT;
         }
         if (price <= 0) {

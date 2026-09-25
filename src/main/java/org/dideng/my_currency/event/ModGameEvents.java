@@ -14,6 +14,7 @@ import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import org.dideng.my_currency.ModBlocks;
 import org.dideng.my_currency.ModItems;
 import org.dideng.my_currency.My_currency;
+import org.dideng.my_currency.attachment.ModAttachments;
 import org.dideng.my_currency.block.entity.CashRegisterBlockEntity;
 import org.dideng.my_currency.block.entity.PaymentTerminalBlockEntity;
 import org.dideng.my_currency.block.entity.ShopBlockEntity;

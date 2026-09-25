@@ -136,7 +136,7 @@ public class ShopScreen extends AbstractContainerScreen<ShopMenu> {
     }
 
     @Override
-    protected void render(GuiGraphics graphics, int mouseX, int mouseY, float partialTick) {
+    public void render(GuiGraphics graphics, int mouseX, int mouseY, float partialTick) {
         super.render(graphics, mouseX, mouseY, partialTick);
         // 行情随时可能被服务端刷新，按钮长相每帧跟着菜单走
         if (modeButton != null) {
