@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "my_currency:bank_machine",
+    "my_currency:cash_register",
+    "my_currency:payment_terminal",
+    "my_currency:shop"
+  ]
+}

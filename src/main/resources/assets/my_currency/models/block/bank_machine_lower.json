@@ -1,0 +1,38 @@
+{
+  "textures": {
+    "front": "my_currency:block/bank_front_lower",
+    "side": "my_currency:block/bank_side",
+    "back": "my_currency:block/bank_back",
+    "top": "my_currency:block/bank_top",
+    "bottom": "my_currency:block/bank_bottom",
+    "particle": "#side"
+  },
+  "elements": [
+    {
+      "name": "plinth",
+      "from": [1, 0, 1],
+      "to": [15, 2, 15],
+      "faces": {
+        "north": {"texture": "#side"},
+        "south": {"texture": "#side"},
+        "east": {"texture": "#side"},
+        "west": {"texture": "#side"},
+        "up": {"texture": "#top"},
+        "down": {"texture": "#bottom"}
+      }
+    },
+    {
+      "name": "lower_body",
+      "from": [2, 2, 2],
+      "to": [14, 16, 14],
+      "faces": {
+        "north": {"texture": "#front"},
+        "south": {"texture": "#back"},
+        "east": {"texture": "#side"},
+        "west": {"texture": "#side"},
+        "up": {"texture": "#top"},
+        "down": {"texture": "#bottom"}
+      }
+    }
+  ]
+}

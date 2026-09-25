@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "my_currency:block/payment_terminal"
+    },
+    "facing=south": {
+      "model": "my_currency:block/payment_terminal",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "my_currency:block/payment_terminal",
+      "y": 90
+    },
+    "facing=east": {
+      "model": "my_currency:block/payment_terminal",
+      "y": 270
+    }
+  }
+}

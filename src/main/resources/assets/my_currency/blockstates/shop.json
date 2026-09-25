@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "my_currency:block/shop"
+    },
+    "facing=south": {
+      "model": "my_currency:block/shop",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "my_currency:block/shop",
+      "y": 90
+    },
+    "facing=east": {
+      "model": "my_currency:block/shop",
+      "y": 270
+    }
+  }
+}

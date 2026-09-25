@@ -1,0 +1,13 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "#side",
+    "north": "my_currency:block/payment_terminal_front",
+    "south": "#side",
+    "east": "#side",
+    "west": "#side",
+    "up": "my_currency:block/cash_register_top",
+    "down": "#side",
+    "side": "my_currency:block/cash_register_side"
+  }
+}
