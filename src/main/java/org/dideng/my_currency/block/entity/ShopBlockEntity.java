@@ -111,7 +111,8 @@ public class ShopBlockEntity extends BlockEntity {
         return items.getStackInSlot(SAMPLE_SLOT);
     }
 
-    // 只数和样品同款的，换过样品的旧库存不会被冒认
+    // 只数和样品同款的，换过样品的旧库存不会被冒认awa
+    
     public int getStockCount() {
         ItemStack product = getProduct();
         if (product.isEmpty()) {
